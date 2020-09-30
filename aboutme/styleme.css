@@ -1,8 +1,11 @@
 h1 {color:white;}
 h2 {color:white;}
-p {color:blue;}
+p {color:blue;
+	font-size:40px;}
 body {background: black;}
 ul {color:white;}
 ol {color:white;}
 a {color: red;}
 span {color: yellow;}
+a:hover {color: green;}
+a {text-decoration: none;}
