@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="lab4.css">
+</head>
+<body>
+<div class = "top">
+  <h1>
+  Workshop Registration
+  <select class = "moreaction" name = "moreaction">
+		<option>More Action</option>
+  </select>
+  </h1>
+  
+<form name = "registration" action = "lab.html">
+</div>
+	<br>
+	<span class = "underline"> Register now while seats are available! </span> 
+	<br> </br>
+	<div class="row">
+	  <div class="column">
+		<span class = "require" >First Name<span>
+	  </div>
+	  <div class="column">
+		<input class = "textfield" type = "text" required name = "firstName" />
+	  </div>
+	  <div class="column" >
+		<span class = "underline"> Lunch<span>
+	  </div>
+	  <div class="column" >
+		
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="column" >
+		<span class = "require">Last Name<span>
+	  </div>
+	  <div class="column">
+		<input  class = "textfield" type = "text" required name = "lastName" />
+	  </div>
+	  <div class="column" >
+		<span class = "label" >Meal Preference</span>
+	  </div>
+	  <div class="column">
+		<select class = "combo" name = "meal">
+			<option>Vegetarian</option>
+		</select>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="column" >
+		<span class = "require" > Company/Institution</span>
+	  </div>
+	  <div class="column" >
+		<input  class = "textfield" type = "text" required name = "company" />
+	  </div>
+	  <div class="column" >
+		<span class = "underline" > Payment Details </span>
+	  </div>
+	  <div class="column">
+		
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="column">
+		<span class = "require" >Address<span>
+	  </div>
+	  <div class="column">
+		<textarea class = "address" rows="4"  required>
+
+		</textarea>
+	  </div>
+	  <div class="column" >
+		<span class = "label" >Payment<span>
+	  </div>
+	  <div class="column">    
+		<input type="checkbox" name="payment"/>Cash <br>
+		<input type="checkbox" name="payment"/>Check <br>
+		<input type="checkbox" name="payment"/>Demand Draft					
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="column">
+		<span class = "label" >City<span>
+	  </div>
+	  <div class="column" >
+		<input  class = "textfield" type = "text" name = "city" />
+	  </div>
+	  <div class="column" >
+		<span class = "label" >DD/Cheque No.<span>
+	  </div>
+	  <div class="column" >
+		<input  class = "textfield" type = "text" name = "cheque" />
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="column">
+		<span class = "label" >State/ Province/ Region</span>
+	  </div>
+	  <div class="column">
+		 <select class = "combo" name = "meal">
+			<option>-Select-</option>
+		</select>
+	  </div>
+	  <div class="column">
+		<span class = "label" >Draw on (Bank name)</span>
+	  </div>
+	  <div class="column">
+		<input class = "textfield" type = "text" name = "bank" />
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="column" >
+		<span class = "label" >Country</span>
+	  </div>
+	  <div class="column" >
+		<select class = "combo" name = "country">
+			<option>-Select-</option>
+		</select>
+	  </div>
+	  <div class="column" >
+		<span class = "label" >Payble at</span>
+	  </div>
+	  <div class="column" >
+		<input class = "textfield" type = "text" name = "payble" />
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="column">
+		<span class = "require" >Email</span>
+	  </div>
+	  <div class="column" >
+		<input class = "textfield" type = "text" pattern = "[a-z0-9._+\-]+@[a-z0-9.\-]+\.[a-z]{2,3}" required name = "email" />
+	  </div>
+	  <div class="column" >
+		
+	  </div>
+	  <div class="column" >
+		
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="column">
+		<span class = "require" >Phone Number</span>
+	  </div>
+	  <div class="column">
+		<input class = "textfield" type = "text" pattern = "[+]?[0-9]+" required name = "phone" />
+	  </div>
+	  <div class="column">
+		
+	  </div>
+	  <div class="column">
+		
+	  </div>
+	</div>
+
+	<div class = "bottom">
+		  <h1>
+			<input class = "button" type = "submit" value = "Submit"/>
+			<input class = "button"type = "submit" value = "Reset"/>
+		  </h1>
+		  
+	</div>
+</form>
+</body>
+</html>

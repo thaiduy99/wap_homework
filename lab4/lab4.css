@@ -1,0 +1,91 @@
+.top {  
+  margin: auto;
+  background-color: #87CEFA;
+  width: 100%;
+  padding: 5px;
+}
+.top > h1{
+  font-size: 20px;
+  vertical-align: center;
+}
+
+.require{
+	font-weight: bold;
+}
+.require::after{
+	content: " *";	
+}
+::after{
+	color: red;
+}
+
+.moreaction{
+    background: transparent;
+    border: 0;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  background-color: white;
+}
+
+.label {
+	font-weight: bold;
+}
+
+.underline {
+	text-decoration: underline
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+	padding: 5px;
+	background-color: white;
+}
+
+.textfield {
+  size: 12;
+  max-width: 20;
+  width: 80%;
+}
+.combo {
+  width: 82%;
+}
+.address{
+	width: 80%;
+	align-content:left;
+}
+.state {
+	width: 82%;
+}
+
+.column > p {
+  text-decoration: underline;
+  size: 12px;
+}
+.button{
+	font-weight: bold;
+	font-size: 15px;
+	background-color: #778899;
+	text-align: center;
+}
+
+.bottom {  
+  margin: auto;
+  background-color: #C0C0C0;
+  width: 100%;
+  padding: 1px;
+  display: flex;
+  justify-content: center;  
+}
+.bottom > h1{
+  font-size: 20px;
+  vertical-align: center;
+}
