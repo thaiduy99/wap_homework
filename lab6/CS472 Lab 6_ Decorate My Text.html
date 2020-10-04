@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://mumstudents.org/cs472/2016-05-BL/Labs/6/decoratemytext.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Text Decorator</title>
+		<link href="./CS472 Lab 6_ Decorate My Text_files/decoratemytext.css" type="text/css" rel="stylesheet">
+		<script src="./CS472 Lab 6_ Decorate My Text_files/decoratemytext.js" type = "text/javascript"></script>
+		<script>
+			let timer = null;
+			window.onload = function () {
+				document.getElementById('btn').onclick = function () {
+					if (timer === null) {
+						timer = setInterval(fontDecorate, 500);
+					}
+					else {
+						clearInterval(timer);
+						timer = null;
+					}
+				};
+				
+			}
+		</script>
+
+
+		<!-- link to your script file here -->
+		
+	</head>
+
+	<body>
+		<h1>Text Decorator</h1>
+		
+		<div>
+			<img src="./CS472 Lab 6_ Decorate My Text_files/decorated.gif" alt="very decorated!">
+		</div>
+
+		<div>
+			<fieldset>
+				<legend>Text</legend>
+				<textarea cols="30" rows="4" id = "id1">Sample Item1 is the assignment to learn about DOM</textarea>
+			</fieldset>
+		</div>
+
+		<div>
+			<fieldset>
+				<legend>Decoration</legend>
+				<input type="button" id = 'btn' value="Bigger Decorations!" onclick = "fontDecorate()"> 
+				<input type="button" id = 'piglatin'  value="Igpay Atinlay" onclick = "piglatin()"> 
+				<input type="button" id = 'malkovitch'  value="Malkovitch" onclick = "malkovitch()">
+				<br><br>
+				<input type="checkbox" id="id2" name="bling" onchange="bling()">
+				<label for="id2">Bling</label>
+			</fieldset>
+		</div>
+		<!-- Your UI controls go here -->
+		
+	
+
+</body></html>
