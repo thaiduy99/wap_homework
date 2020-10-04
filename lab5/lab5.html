@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="lab5.js"> </script>
+</head>
+
+<body>
+    Look in the Chrome developer console to see the output. CTRL_SHIFT_J
+    <ol>
+        <li> <span> Function max()</span></li>
+        <p>
+            <label for="num1">Number 1: </label><input type="text" id="num1" /><br>
+            <label for="num2">Number 2: </label><input type="text" id="num2" /><br>
+            <span>
+                <button id="btnMaxtwo" onclick="max(document.getElementById('num1').value, document.getElementById('num2').value);"> Max </button>
+                <label for="resultofmax">Max of two: </label><input type="text" id="max" />
+            </span>
+        </p>
+        <li> <span>Function maxOfThree()</span></li>
+        <p>
+            <label for="n1">Number 1: </label><input type="text" id="n1" /><br>
+            <label for="n2">Number 2: </label><input type="text" id="n2" /><br>
+            <label for="n3">Number 3: </label><input type="text" id="n3" /><br>
+            <span>
+                <button id="btnMaxOfThree" onclick="maxOfThree(document.getElementById('n1').value, document.getElementById('n2').value, document.getElementById('n3').value);">Find MaxOfThree</button><label id="maxofthree"></label>
+                <label for="maxofthree">Max of three: </label><input type="text" id="b3" />
+            </span>
+        </p>
+        <li> <span>Function isVowel</span></li>
+        <p>
+            <label for="char1">Input a character: </label><input type="text" id="testvowel" /><br>
+            <button id="btnIsVovel" onclick="isVowel(document.getElementById('testvowel').value);"> IsVowel </button>
+            <p id="b4"></p>
+        </p>
+
+        <li> <span>Multiply && Sum</span></li>
+        <p>
+            <label for="arr">Input a character: </label><input type="text" id="arr" /> <span> (EX: [1, 2, 4, 5])</span> <br>
+            <button id="reduce" onclick="sumAndMultiply(JSON.parse(getElementById('arr').value));"> Sum&Multiply </button>
+            <label for="sum">Sum: </label><input type="text" id="sum" />
+            <label for="mul">Multiply: </label><input type="text" id="mul" />
+           
+        </p>
+
+        <li> <span>Reverse String</span></li>
+        <p>
+            <label for="char1">Input a String: </label><input type="text" id="reversestr" /><br>
+            <button id="btnReverse" onclick="reverse(document.getElementById('reversestr').value);"> Reverse String </button>
+            <label for="reverseString"> Reversed string: </label><input type="text" id="reverseString" />
+        </p>
+
+        <li> <span>Max Lenghth of Array of String</span></li>
+        <p>
+            <label for="arr1">Input an array of string: </label><input type="text" id="arr1" /><span> (EX: 1, 2, 3, 623fd9)</span> <br>
+            <button id="btnMaxLength" onclick="findLongestWord(getElementById('arr1').value);"> Max Length</button>
+            <label for="maxlength"> Max Length: </label><input type="text" id="maxlength" />
+        </p> 
+        
+        <li> <span>Filter of Array</span></li>
+        <p>
+            <label for="arr2">Input an array of int: </label><input type="text" id="arr2" /><span> (EX: 1, 2, 3, 1sedd, 23)</span> <br>
+            <label for="filternumber">Input an int: </label><input type="text" id="filternumber" /> <br>
+
+            <button id="filter" onclick="filterLongWords(getElementById('arr2').value, getElementById('filternumber').value);"> Filter</button>
+            <label for="filterednum"> Filtered numbers: </label><input type="text" id="filterednum" />
+        </p> 
+
+    </ol>
+</body>
+
+</html>
